@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nortontime</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- fonte -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!--bootstrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!--bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer>
+  </script>
+
+</head>
+<body>
+  <app-root></app-root>
+  <header class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+    <nav class="container">
+      <a href="#" class="navbar-brand">NortonTime</a>
+      <div id="navbar-items">
+        <form class="d-flex" id="search-form">
+          <i class="bi bi-search primary-color"></i>
+          <input type="search" class="form-control me-2" placeholder="Busque o seu relógio..." aria-label="Search">
+          <button type="submit" class="btn secondary-bg-color">
+            Pesquisar
+          </button>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-person"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-heart"></i>
+            </a>
+          </li>
+          <li class="nav-item" id="bag-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-bag"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+    <div class="container">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bottom-navbar"
+        aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Promoções</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <main>
+    <section class="container" id="banners-container">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/banner1.jpg" alt="Banner 1" class="d-block w-100 img-fluid">
+            <div class="carousel-caption primary-bg-color">
+              <h5>Relógios de Luxo</h5>
+              <p>Para você estar pronto como o Norton em qualquer situação.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner3.jpg" alt="Banner 3" class="d-block w-100 img-fluid">
+            <div class="carousel-caption primary-bg-color">
+              <h5>Linha Importada</h5>
+              <p>Conheça os melhores relógios da linha Norton, com pronta entrega.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visualy-hidden"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+
+      <div class="container" id="mini-banners">
+        <div class="row justify-content-around">
+          <div class="col-12 dark-bg-color" id="mini-banner-1">
+            <h2>Nova coleção</h2>
+            <img src="assets/img/relogio1.png" alt="relogio 1">
+            <a href="#">Compre agora</a>
+          </div>
+          <div class="col-12 secondary-bg-color" id="mini-banner-2">
+            <h2>Promoções</h2>
+            <img src="assets/img/relogio2.png" alt="Relógio 2">
+            <a href="#">Compre agora</a>
+          </div>
+          <div class="col-12 light-bg-color" id="mini-banner-3">
+            <h2 class="secondary-color">Edição Limitada</h2>
+            <img src="assets/img/relogio3.png" alt="Relógio 3">
+            <a href="#">Compre agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="best-sellers">
+      <h2 class="title primary-color">Mais vendidos</h2>
+      <ul class="row list-unstyled">
+        <li class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/relogio1.png" alt="Relogio 1" class="card-img-top">
+            <div class="card-body">
+              <p class="card-category secondary-color">Relógio</p>
+              <h5 class="card-title">Breitling</h5>
+              <p class="card-text primary-color">R$2378,79</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/relogio4.png" alt="Relogio 4" class="card-img-top">
+            <div class="card-body">
+              <p class="card-category secondary-color">Relógio</p>
+              <h5 class="card-title">SilverLeather</h5>
+              <p class="card-text primary-color">R$2475,97</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/relogio5.png" alt="Relogio 5" class="card-img-top">
+            <div class="card-body">
+              <p class="card-category secondary-color">Relógio</p>
+              <h5 class="card-title">SilverTime</h5>
+              <p class="card-text primary-color">R$6296,99</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+            <img src="assets/img/relogio6.png" alt="Relogio 6" class="card-img-top">
+            <div class="card-body">
+              <p class="card-category secondary-color">Relógio</p>
+              <h5 class="card-title">GoldTime</h5>
+              <p class="card-text primary-color">R$1199,20</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container-fluid" id="featured-banner">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <p class="primary-color offer-subtitle">
+            Desconto de até 90%
+          </p>
+          <h2 class="light-color">Relógio X</h2>
+          <p class="secondary-color">
+            Presenteie o seu aluno com este relógio luxuoso
+          </p>
+          <a href="#" class="btn btn-primary">Comprar Agora</a>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="assets/img/relogio7.png" alt="Relógio X">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="new-products">
+      <h2 class="title primary-color">Novidades</h2>
+      <ul class="row list-unstyled">
+        <li class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+          <p class="secondary-color">Os melhores</p>
+          <h3>Relógios</h3>
+          <p class="primary-color">Pelos melhores preços</p>
+        </li>
+        <li class="col-12 col-md-9">
+          <ul class="row list-unstyled">
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio1.png" alt="Relogio 1" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">Breitling</h5>
+                  <p class="card-text primary-color">R$2378,79</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio6.png" alt="Relogio 6" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">GoldTime</h5>
+                  <p class="card-text primary-color">R$1199,20</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio5.png" alt="Relogio 5" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">SilverTime</h5>
+                  <p class="card-text primary-color">R$6296,99</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio4.png" alt="Relogio 4" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">SilverLeather</h5>
+                  <p class="card-text primary-color">R$2475,97</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio3.png" alt="Relogio 3" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">WristologyPOO</h5>
+                  <p class="card-text primary-color">R$4012,40</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img src="assets/img/relogio8.png" alt="Relogio 8" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-category secondary-color">Relógio</p>
+                  <h5 class="card-title">GraytonAlg</h5>
+                  <p class="card-text primary-color">R$1300,99</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <section class="container-fluid" id="footer-links-container">
+      <ul class="row list-unstyled">
+        <li class="col-12 col-md-4 footer-column">
+          <h3>Páginas</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Produtos</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Promoções</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Contato</a>
+            </li>
+          </ul>
+        </li>
+        <li class="col-12 col-md-4 footer-column" id="footer-center">
+          <h3 class="no-uppercase">NortonTime</h3>
+          <p class="secondary-color">Alguma dúvida? Ligue para nós!</p>
+          <p class="store-phone">
+            <i class="bi bi-telephone"></i>
+            (11)9999-9999
+          </p>
+        </li>
+        <li class="col-12 col-md-4 footer-column">
+          <h3>Informações</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Política de Privacidade</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Política de Entrega</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="secondary-color">Rastreie o seu pedido</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container-fluid dark-bg-color" id="newsletter-container">
+      <div class="col-12">
+        <div class="row">
+          <p class="secondary-color">Se inscreva na nossa Newsletter:</p>
+          <form class="d-flex" id="news-form">
+            <i class="bi bi-envelope primary-color"></i>
+            <input type="email" class="form-control me-2" placeholder="Insira seu e-mail">
+            <button type="submit" class="btn secondary-bg-color">Enviar</button>
+          </form>
+        </div>
+        <div class="col-12" id="social-container">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="copy-container">
+      <p>
+        Todos os direitos reservados @2023
+        <span class="primary-color">NortonTime</span>
+        - A sua loja de relógios
+      </p>
+    </section>
+  </footer>
+</body>
+</html>

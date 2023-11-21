@@ -1,0 +1,110 @@
+body {
+    background-color: #252525;
+    color: #fff;
+  }
+
+  p {
+    padding-top: 15%;
+  }
+  
+  .primary-bg-color {
+    background-color: #252525;
+  }
+  
+  .secondary-bg-color {
+    background-color: #c09578;
+  }
+  
+  .light-bg-color {
+    background-color: #fcf5eb;
+  }
+  
+  .dark-bg-color {
+    background-color: #252525;
+  }
+  
+  .primary-color {
+    color: #c09578;
+  }
+  
+  .secondary-color {
+    color: #626262;
+  }
+  
+  .light-color {
+    color: #fcf5eb;
+  }
+  
+
+  #search-form,
+  #mail-form {
+    width: 100%;
+    margin: 2em 0;
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+  
+  #search-form input,
+  #mail-form input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+  
+  #search-form input:focus,
+  #mail-form input:focus {
+    box-shadow: none;
+  }
+  
+  #search-form input::placeholder,
+  #mail-form input::placeholder {
+    color: #fff;
+  }
+
+  
+  .btn {
+    background-color: transparent;
+    border-color: #c09578;
+  }
+  
+  .btn:hover {
+    background-color: #c09578;
+    border-color: #c09578;
+  }
+ 
+  #esquecisenha-container {
+    border-bottom: 1px solid #626262;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #mail-form {
+    max-width: 600px;
+    margin: 15px auto;
+  }
+  
+  #mail-form i {
+    font-size: 1.5em;
+  }
+  
+  #mail-form .btn {
+    color: #fff;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    
+    #search-form {
+      width: 50%;
+      margin: 0;
+    }
+  
+    .btn {
+      width: fit-content;
+    }
+  
+    #mail-form {
+      width: 50%;
+    }
+  }
