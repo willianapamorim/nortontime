@@ -41,7 +41,7 @@
           <a href="#" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Produtos</a>
+          <a href="#new-products" class="nav-link">Produtos</a>
         </li>
         <li class="nav-item">
           <a href="#featured-banner" class="nav-link">Promoções</a>
@@ -308,8 +308,8 @@
             <p class="secondary-color">Se inscreva na nossa Newsletter:</p>
             <form class="d-flex" id="news-form">
               <i class="bi bi-envelope primary-color"></i>
-              <input type="email" class="form-control me-2" placeholder="Insira seu e-mail">
-              <button type="submit" class="btn secondary-bg-color">Enviar</button>
+              <input type="email" class="form-control me-2" placeholder="Insira seu e-mail" name="email" [(ngModel)]="email">
+              <button (click)="exibirMensagem($event)" type="button" class="btn secondary-bg-color">Enviar</button>
             </form>
           </div>
           <div class="col-12" id="social-container">
