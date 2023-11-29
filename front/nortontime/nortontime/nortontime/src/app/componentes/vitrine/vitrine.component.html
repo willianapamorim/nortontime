@@ -5,7 +5,7 @@
         <form class="d-flex" id="search-form">
           <i class="bi bi-search primary-color"></i>
           <input type="search" class="form-control me-2" placeholder="Busque o seu relógio..." aria-label="Search">
-          <button type="submit" class="btn secondary-bg-color">
+          <button (click)="pesquisar()" type="submit" class="btn secondary-bg-color">
             Pesquisar
           </button>
         </form>
@@ -37,9 +37,6 @@
         <i class="bi bi-list"></i>
       </button>
       <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
-        <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
-        </li>
         <li class="nav-item">
           <a href="#new-products" class="nav-link">Produtos</a>
         </li>
@@ -90,17 +87,17 @@
           <div class="col-12 dark-bg-color" id="mini-banner-1">
             <h2>Nova coleção</h2>
             <img src="assets/img/relogio1.png" alt="relogio 1">
-            <a href="#">Compre agora</a>
+            <a href="#new-products">Compre agora</a>
           </div>
           <div class="col-12 secondary-bg-color" id="mini-banner-2">
             <h2>Promoções</h2>
             <img src="assets/img/relogio2.png" alt="Relógio 2">
-            <a href="#">Compre agora</a>
+            <a href="#new-products">Compre agora</a>
           </div>
           <div class="col-12 light-bg-color" id="mini-banner-3">
             <h2 class="secondary-color">Edição Limitada</h2>
             <img src="assets/img/relogio3.png" alt="Relógio 3">
-            <a href="#">Compre agora</a>
+            <a href="#new-products">Compre agora</a>
           </div>
         </div>
       </div>
@@ -116,7 +113,7 @@
               <p class="card-category secondary-color">Relógio</p>
               <h5 class="card-title">Breitling</h5>
               <p class="card-text primary-color">R$2378,79</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
             </div>
           </div>
         </li>
@@ -127,7 +124,7 @@
               <p class="card-category secondary-color">Relógio</p>
               <h5 class="card-title">SilverLeather</h5>
               <p class="card-text primary-color">R$2475,97</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
             </div>
           </div>
         </li>
@@ -138,7 +135,7 @@
               <p class="card-category secondary-color">Relógio</p>
               <h5 class="card-title">SilverTime</h5>
               <p class="card-text primary-color">R$6296,99</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
             </div>
           </div>
         </li>
@@ -149,7 +146,7 @@
               <p class="card-category secondary-color">Relógio</p>
               <h5 class="card-title">GoldTime</h5>
               <p class="card-text primary-color">R$1199,20</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
             </div>
           </div>
         </li>
@@ -166,7 +163,7 @@
           <p class="secondary-color">
             Presenteie o seu aluno com este relógio luxuoso
           </p>
-          <a href="#" class="btn btn-primary">Comprar Agora</a>
+          <a href="#new-products" class="btn btn-primary">Comprar Agora</a>
         </div>
         <div class="col-12 col-md-4">
           <img src="assets/img/relogio7.png" alt="Relógio X">
@@ -191,7 +188,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">Breitling</h5>
                   <p class="card-text primary-color">R$2378,79</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -202,7 +199,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">GoldTime</h5>
                   <p class="card-text primary-color">R$1199,20</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -213,7 +210,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">SilverTime</h5>
                   <p class="card-text primary-color">R$6296,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -224,7 +221,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">SilverLeather</h5>
                   <p class="card-text primary-color">R$2475,97</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -235,7 +232,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">WristologyPOO</h5>
                   <p class="card-text primary-color">R$4012,40</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -246,7 +243,7 @@
                   <p class="card-category secondary-color">Relógio</p>
                   <h5 class="card-title">GraytonAlg</h5>
                   <p class="card-text primary-color">R$1300,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <button (click)="adicionarNoCarrinho($event)" type="button" class="btn btn-primary">Comprar</button>
                 </div>
               </div>
             </li>
@@ -264,16 +261,13 @@
             <h3>Páginas</h3>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="#" class="secondary-color">Home</a>
+                <a href="#navbar" class="secondary-color">Home</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="secondary-color">Produtos</a>
+                <a href="#new-products" class="secondary-color">Produtos</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="secondary-color">Promoções</a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="secondary-color">Contato</a>
+                <a href="#featured-banner" class="secondary-color">Promoções</a>
               </li>
             </ul>
           </li>

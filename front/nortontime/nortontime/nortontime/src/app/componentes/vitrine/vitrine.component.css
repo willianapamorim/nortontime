@@ -1,0 +1,4 @@
+.centered-snackbar {
+    transform: translateY(calc(-50% + 56px)); /* Ajuste conforme necessário para centralizar verticalmente */
+  }
+  
