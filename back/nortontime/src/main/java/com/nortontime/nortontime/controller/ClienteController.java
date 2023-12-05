@@ -40,6 +40,15 @@ public class ClienteController {
         return ResponseEntity.status(HttpStatus.CREATED).body(repositorio.save(cliente));
     }
 
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody Cliente cliente) {
+        if (cliente != null && cliente.getEmail() != null && cliente.getSenha() != null) {
+            return ResponseEntity.ok("Login bem-sucedido para " + cliente.getEmail());
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas");
+        }
+    }
+
     // Atualiza um cliente
     @PutMapping
     public ResponseEntity<Cliente> putAtendente (@RequestBody Cliente cliente){
